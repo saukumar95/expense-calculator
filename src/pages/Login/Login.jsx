@@ -28,7 +28,7 @@ const Login = () => {
                     <div className="switch">
                         <p>
                             New user? &nbsp;
-                            <a href="#" onClick={() => setToggle(false)}>Create an account</a>
+                            <span className='link' onClick={() => setToggle(false)}>Create an account</span>
                         </p>
                     </div>
                 </div> : <div className="card">
@@ -45,9 +45,9 @@ const Login = () => {
                     <div className="switch">
                         <p>
                             Already have an account? &nbsp;
-                            <a href="#" onClick={() => setToggle(true)}>
+                            <span className='link' onClick={() => setToggle(true)}>
                                 Login here
-                            </a>
+                            </span>
                         </p>
                     </div>
                 </div>}

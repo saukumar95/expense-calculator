@@ -95,5 +95,11 @@
     text-decoration: none;
     cursor: pointer;
   }
+
+  .link {
+    text-decoration: underline;
+    color: #007BFF;
+    cursor: pointer;
+  }
   
   
