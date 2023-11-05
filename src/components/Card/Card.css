@@ -14,13 +14,13 @@
     font-weight: 700;
 }
 
-.card-form {
+.body {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.switch {
+.footer {
     margin-top: 15px;
     font-size: 14px;
 }

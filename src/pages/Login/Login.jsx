@@ -24,7 +24,7 @@ const Login = () => {
                     <p className="text-label">Expensify</p>
                     <div>
                         <h4>Manage your daily expenses</h4>
-                        <p>An AI power expense calculator which provides your insigts of monthly expenses as well as forcasted expenditure for your upcoming months.</p>
+                        <p>An AI power expense calculator which provides your insight of monthly expenses as well as forcasted expenditure for your upcoming months.</p>
                     </div>
                     <div className='circular--landscape'>
                         <img src={Logo} alt='logo' />

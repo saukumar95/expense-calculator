@@ -3,10 +3,10 @@ const Card = ({ title, children, footer }) => {
     return (
         <div className="card">
             <div className='title'>{title}</div>
-            <form className='card-form'>
+            <form className='body'>
                 {children}
             </form>
-            <div className="switch">
+            <div className="footer">
                 {footer}
             </div>
         </div>
