@@ -29,40 +29,23 @@
     gap: 40px;
     align-items: center;
   }
-  
-  .card {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 32px;
-    border-radius: 10px;
-    text-align: center;
-    min-height: 600px;
-    background-color: white ;
-    box-shadow: 10px 10px 10px 10px whitesmoke ;
-  } 
-  
+
   h4 {
     font-weight: 600;
   }
-  
-  .card-form {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-  
+
   label {
     text-align: left;
     margin-bottom: 5px;
   }
-  
+
   input {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
   }
-  
+
   button {
     padding: 10px;
     background-color: #000000;
@@ -70,20 +53,6 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  .switch {
-    margin-top: 15px;
-    font-size: 14px;
-  }
-  
-  .switch a {
-    color: #007BFF;
-  }
-
-  .title {
-    font-size: 24px;
-    font-weight: 700;
   }
 
   .text-label {
@@ -101,5 +70,18 @@
     color: #007BFF;
     cursor: pointer;
   }
-  
-  
+
+  .circular--landscape {
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  .circular--landscape img {
+    width: auto;
+    height: 100%;
+    margin-left: -50px;
+  }
