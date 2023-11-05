@@ -1,31 +1,37 @@
 .card {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 32px;
-    border-radius: 10px;
-    text-align: center;
-    min-height: 600px;
-    background-color: white;
-    box-shadow: 10px 10px 10px 10px whitesmoke;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 32px;
+  border-radius: 10px;
+  text-align: center;
+  min-height: 600px;
+  background-color: white;
+  box-shadow: 10px 10px 10px 10px whitesmoke;
 }
 
 .title {
-    font-size: 24px;
-    font-weight: 700;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .subtitle {
-    font-size: 14px;
-    color: gray;
+  font-size: 14px;
+  color: gray;
 }
 
 .body {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .footer {
-    margin-top: 15px;
-    font-size: 14px;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    width: 100%;
+  }
 }
