@@ -4,16 +4,17 @@ import Card from '../../components/Card/Card'
 import Logo from '../../images/expenses-cal.jpg'
 
 const Login = () => {
-    const [toggle, setToggle] = useState(true)
-    const title = toggle ? "Log into your Expensify account" : "Register yourself now to Expensify"
+    const [isRegistered, setIsRegistered] = useState(true)
+    const title = isRegistered ? "Log into your Expensify account" : "Create a Expensify Account"
+    const subtitle = isRegistered ? "Log into your account and manage your finances" : "Create an account and manage your finances" 
     const getFooter =
-        toggle ? <p>
+        isRegistered ? <p>
             New user? &nbsp;
-            <span className='link' onClick={() => setToggle(false)}>Create an account</span>
+            <span className='link' onClick={() => setIsRegistered(false)}>Create an account</span>
         </p> : <p>
-            Already have an account? &nbsp;
-            <span className='link' onClick={() => setToggle(true)}>
-                Login here
+            Already a user? &nbsp;
+            <span className='link' onClick={() => setIsRegistered(true)}>
+                Login
             </span>
         </p>
 
@@ -32,8 +33,8 @@ const Login = () => {
                 </div>
             </div>
             <div className="container-form">
-                {toggle ?
-                    <Card title={title} footer={getFooter}>
+                {isRegistered ?
+                    <Card title={title} footer={getFooter} subtitle={subtitle}>
                         <label htmlFor="email" >Email address</label>
                         <input type="email" name="email" id='email' placeholder="Enter your email address" autoComplete='false' />
                         <label htmlFor="password">Enter password</label>
@@ -41,13 +42,12 @@ const Login = () => {
                         <button type="submit">Log in</button>
                     </Card>
                     :
-                    <Card title={title} footer={getFooter}>
-                        <label htmlFor="fullname">Full Name</label>
-                        <input type="text" id="fullname" name='fullName' placeholder="Enter your full name" />
-                        <label htmlFor="email">Email</label>
-                        <input type="email" name='email' id="email" placeholder="Enter your email" autoComplete='false' />
-                        <label htmlFor="new-password">New Password</label>
-                        <input type="password" name='newPassword' id="new-password" placeholder="Enter your new password" />
+                    <Card title={title} footer={getFooter} subtitle={subtitle}>
+                        <label htmlFor="email">Email address</label>
+                        <input type="email" name='email' id="email" placeholder="Enter your email address" autoComplete='false' />
+                        <label htmlFor="new-password">Create password</label>
+                        <input type="password" name='newPassword' id="new-password" placeholder="Create a strong password" />
+                        <div style={{fontSize: "14px"}}><input type='checkbox' name='agreement' /> I agree with the privacy policy & accept the term and condition.</div>
                         <button type="submit">Register</button>
                     </Card>}
             </div>

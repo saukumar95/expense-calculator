@@ -1,8 +1,11 @@
 import "./Card.css"
-const Card = ({ title, children, footer }) => {
+const Card = ({ title, subtitle, children, footer }) => {
     return (
         <div className="card">
-            <div className='title'>{title}</div>
+            <div>
+                <div className='title'>{title}</div>
+                {subtitle && <span className="subtitle">{subtitle}</span>}
+            </div>
             <form className='body'>
                 {children}
             </form>
