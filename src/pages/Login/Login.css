@@ -85,3 +85,8 @@
     height: 100%;
     margin-left: -50px;
   }
+
+  .footer-privacy-text {
+    color: goldenrod;
+    font-weight: 600;
+  }
