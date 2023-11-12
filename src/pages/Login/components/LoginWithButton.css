@@ -1,0 +1,19 @@
+.btn-login-with {
+    padding: 10px;
+    background-color: #e7f0fd !important;
+    color: #5c95f5 !important;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 0.4rem;
+}
+
+.btn-icon {
+    vertical-align: 0.1rem;
+    padding-right: 4px;
+}
+
+.button-container {
+    padding: 10px;
+}
