@@ -1,1 +1,1 @@
-## Expense Calculator App (AI Powered)
+## Expensify App (AI Powered)
