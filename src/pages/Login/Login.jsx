@@ -47,7 +47,7 @@ const Login = () => {
                         <input type="email" name='email' id="email" placeholder="Enter your email address" autoComplete='false' />
                         <label htmlFor="new-password">Create password</label>
                         <input type="password" name='newPassword' id="new-password" placeholder="Create a strong password" />
-                        <div style={{fontSize: "14px"}}><input type='checkbox' name='agreement' /> I agree with the privacy policy & accept the term and condition.</div>
+                        <div style={{fontSize: "14px"}}><input type='checkbox' name='agreement' /> I agree with the <span className='footer-privacy-text'>privacy policy</span> & accept the <span className='footer-privacy-text'>term and condition.</span></div>
                         <button type="submit">Register</button>
                     </Card>}
             </div>
